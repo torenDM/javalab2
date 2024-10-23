@@ -1,7 +1,7 @@
 public class Name {
-    private String surname; // Фамилия
-    private String name; // Имя
-    private String patronymic; // Отчество
+    private final String surname; // Фамилия
+    private final String name; // Имя
+    private final String patronymic; // Отчество
 
     // Конструктор
     public Name(String surname, String firstName, String patronymic) {
@@ -22,7 +22,7 @@ public class Name {
 
         // Добавляем личное имя, если оно задано
         if (name != null && !name.isEmpty()) {
-            if (sb.length() > 0) {
+            if (!sb.isEmpty()) {
                 sb.append(" "); // Добавляем пробел, если уже есть фамилия
             }
             sb.append(name);
@@ -30,7 +30,7 @@ public class Name {
 
         // Добавляем отчество, если оно задано
         if (patronymic != null && !patronymic.isEmpty()) {
-            if (sb.length() > 0) {
+            if (!sb.isEmpty()) {
                 sb.append(" "); // Добавляем пробел, если уже есть фамилия или имя
             }
             sb.append(patronymic);

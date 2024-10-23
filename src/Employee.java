@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class Employee {
-    private String name; // Имя сотрудника
+    private final String name; // Имя сотрудника
     private Department department; // Отдел, к которому принадлежит сотрудник
 
     // Конструктор для создания сотрудника с именем
@@ -18,11 +18,6 @@ public class Employee {
     // Метод для получения имени сотрудника
     public String getName() {
         return name;
-    }
-
-    // Метод для получения отдела сотрудника
-    public Department getDepartment() {
-        return department;
     }
 
     // Метод для получения списка коллег в одном отделе

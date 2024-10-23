@@ -1,8 +1,5 @@
-import java.time.Duration;
-import java.time.temporal.ChronoUnit;
-
 public class Time {
-    private int seconds;
+    private final int seconds;
 
     // Конструктор для инициализации времени по количеству секунд с начала суток
     public Time(int seconds) {

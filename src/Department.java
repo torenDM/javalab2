@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Department {
-    private String name; // Имя отдела
+    private final String name; // Имя отдела
     private Employee head; // Начальник отдела
-    private List<Employee> employees; // Список сотрудников отдела
+    private final List<Employee> employees; // Список сотрудников отдела
 
     // Конструктор для создания отдела с именем
     public Department(String name) {
